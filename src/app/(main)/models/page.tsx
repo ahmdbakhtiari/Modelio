@@ -10,46 +10,39 @@ import Link from "next/link";
 
 const models = [
   {
-    name: "GPT",
-    maker: "OpenAI",
-    description: "General purpose AI",
-    detail: "Best for broad tasks",
-    tags: ["Reasoning", "Coding", "Vision"],
+    name: "Nemotron-3",
+    maker: "NVIDIA",
+    description: "Advanced reasoning and technical problem solving",
+    detail: "Strong for coding and complex tasks",
+    tags: ["Reasoning", "Coding", "Analysis"],
     icon: Command,
   },
   {
-    name: "Claude",
-    maker: "Anthropic",
-    description: "Advanced reasoning and writing",
-    detail: "Long context, thoughtful",
-    tags: ["Writing", "Web", "Safety"],
+    name: "Space-Bunny",
+    maker: "Open Source",
+    description: "Lightweight AI for fast everyday interactions",
+    detail: "Fast, simple, and efficient",
+    tags: ["Chat", "General", "Speed"],
     icon: CircleHelp,
   },
   {
-    name: "Gemini",
-    maker: "Google",
-    description: "Multimodal intelligence and research",
-    detail: "Fresh, fast, capable",
-    tags: ["Vision", "Research", "Code"],
+    name: "Ling-3",
+    maker: "InclusionAI",
+    description: "Reasoning, coding, and multilingual intelligence",
+    detail: "Flexible for technical and global tasks",
+    tags: ["Coding", "Reasoning", "Multilingual"],
     icon: Sparkles,
   },
   {
-    name: "Qwen",
-    maker: "Alibaba",
-    description: "Strong multilingual and coding capabilities",
-    detail: "Global, open, capable",
-    tags: ["Coding", "Reasoning", "Multilingual"],
+    name: "Dots3",
+    maker: "Open Source",
+    description: "Flexible model for general-purpose AI applications",
+    detail: "Practical and easy to use",
+    tags: ["General", "Chat", "Generation"],
     icon: Crosshair,
   },
-  {
-    name: "Llama",
-    maker: "Meta",
-    description: "Open-source AI models",
-    detail: "Open and adaptable",
-    tags: ["General", "Coding", "Open source"],
-    icon: CircleHelp,
-  },
 ];
+
 
 export default function Page() {
   return (

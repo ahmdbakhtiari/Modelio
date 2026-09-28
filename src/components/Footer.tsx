@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -12,19 +13,30 @@ export default function Footer() {
                 <div className="mx-auto flex max-w-6xl items-center justify-between text-xs text-zinc-400">
                     <span>© 2026 AI Model Hub</span>
 
+
                     <div className="flex gap-6">
-                        <a href="#home" className="transition-colors hover:text-zinc-600">
-                            Privacy
-                        </a>
+                        <Link
+                            href="/models"
+                            className="transition-colors hover:text-zinc-600"
+                        >
+                            Models
+                        </Link>
 
-                        <a href="#home" className="transition-colors hover:text-zinc-600">
-                            Terms
-                        </a>
+                        <Link
+                            href="/about"
+                            className="transition-colors hover:text-zinc-600"
+                        >
+                            About
+                        </Link>
 
-                        <a href="#home" className="transition-colors hover:text-zinc-600">
-                            Status
-                        </a>
+                        <Link
+                            href="/contact"
+                            className="transition-colors hover:text-zinc-600"
+                        >
+                            Contact
+                        </Link>
                     </div>
+
                 </div>
             </footer>
 

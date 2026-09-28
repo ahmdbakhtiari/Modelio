@@ -1,60 +1,50 @@
 const models = [
   {
     number: "01",
-    name: "GPT",
-    maker: "OpenAI",
+    name: "Nemotron-3",
+    maker: "NVIDIA",
     description:
-      "A flexible general-purpose family designed to perform reliably across complex knowledge-work tasks.",
+      "A reasoning-focused model family designed for strong performance across complex tasks, coding, and technical problem solving.",
     training:
-      "Broad reasoning, tool use, multimodal understanding",
-    uses: "Product work, analysis, software development",
-    strengths: "Reasoning · Coding · Vision · Research",
+      "Advanced reasoning, coding, instruction following",
+    uses: "Software development, analysis, technical workflows",
+    strengths: "Reasoning · Coding · Analysis · Technical Tasks",
   },
   {
     number: "02",
-    name: "Claude",
-    maker: "Anthropic",
+    name: "Space-Bunny",
+    maker: "Open Source",
     description:
-      "A thoughtful model family known for clear communication and careful handling of long, detailed material.",
+      "A lightweight model designed for fast, practical interactions and efficient AI-powered applications.",
     training:
-      "Nuanced reasoning, long context, precise writing",
-    uses: "Documents, synthesis, strategy, code review",
-    strengths: "Reasoning · Writing · Coding · Analysis",
+      "Instruction following, general language understanding",
+    uses: "Chat applications, assistants, lightweight workflows",
+    strengths: "Speed · General · Chat · Efficiency",
   },
   {
     number: "03",
-    name: "Gemini",
-    maker: "Google",
+    name: "Ling-3",
+    maker: "InclusionAI",
     description:
-      "A multimodal family built to connect text, images, data, and information-rich research tasks.",
+      "A modern language model focused on reasoning, coding, and multilingual understanding across a wide range of tasks.",
     training:
-      "Native multimodality, research, ecosystem reach",
-    uses: "Visual analysis, research, data-rich workflows",
-    strengths: "Vision · Research · Coding · Audio",
+      "Reasoning, multilingual understanding, coding",
+    uses: "Development, research, multilingual applications",
+    strengths: "Reasoning · Coding · Multilingual · Research",
   },
   {
     number: "04",
-    name: "Qwen",
-    maker: "Alibaba",
+    name: "Dots3",
+    maker: "Open Source",
     description:
-      "A technically capable family with strong language coverage and practical performance in code-heavy work.",
+      "A flexible model designed for general-purpose AI applications with an emphasis on practical performance and usability.",
     training:
-      "Multilingual performance, mathematics, coding",
-    uses: "Global products, localization, development",
-    strengths: "Coding · Reasoning · Multilingual · Math",
-  },
-  {
-    number: "05",
-    name: "Llama",
-    maker: "Meta",
-    description:
-      "An open model family that gives teams greater control over adaptation, hosting, and specialized workflows.",
-    training:
-      "Open ecosystem, adaptability, experiment control",
-    uses: "Private systems, research, custom applications",
-    strengths: "General · Coding · Reasoning · Open source",
+      "General language understanding, instruction following",
+    uses: "AI assistants, content generation, general applications",
+    strengths: "General · Chat · Generation · Flexibility",
   },
 ];
+
 
 export default function Page() {
   return (

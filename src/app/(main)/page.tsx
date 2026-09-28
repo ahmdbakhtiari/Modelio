@@ -56,7 +56,7 @@ function WindowPreview() {
             <i className="h-1 w-1 rounded-full bg-zinc-300" />
           </span>
 
-          <span>GPT-4o · Example</span>
+          <span>Nemotron-3 · Example</span>
         </div>
 
         <div className="space-y-4 p-7 text-center text-[10px] leading-relaxed text-zinc-500 sm:p-10">
@@ -68,16 +68,17 @@ function WindowPreview() {
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400" />
 
             <div className="text-center">
-              <p className="font-medium text-zinc-600">GPT 5</p>
+              <p className="font-medium text-zinc-600">Nemotron-3</p>
 
               <p>
-                For a globally distributed application, where the latency,
-                consistency, and operational ownership matter.
+                A powerful reasoning model designed for complex tasks, coding,
+                analysis, and technical problem solving.
                 <br />
-                Here is a practical framework for choosing between the best
-                options.
+                A practical choice for applications that require reliable and
+                capable AI assistance.
               </p>
             </div>
+
           </div>
         </div>
       </div>
@@ -146,12 +147,12 @@ export default function Page() {
           </span>
 
           <div className="hidden gap-12 text-xs text-zinc-500 sm:flex">
-            <span>GPT</span>
-            <span>Claude</span>
-            <span>Gemini</span>
-            <span>Qwen</span>
-            <span>Llama</span>
+            <span>Nemotron-3</span>
+            <span>Space-Bunny</span>
+            <span>Ling-3</span>
+            <span>Dots3</span>
           </div>
+
         </div>
       </section>
 
