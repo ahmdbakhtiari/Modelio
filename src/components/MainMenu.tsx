@@ -1,27 +1,64 @@
-import { Button } from '@heroui/react'
-import Link from 'next/link'
-import React from 'react'
+import { Button } from "@heroui/react";
+import Link from "next/link";
 
 export default function MainMenu() {
-    return (
-        <div className='flex items-center py-5 bg-gray-50 border-b-[1px] justify-around'>
-            <div>
-                <p> 
-                    <span className='bg-sky-500 mr-2 px-2 rounded-sm'></span>
-                    Modelio</p>
-            </div>
-            <div>
-                <ul className='flex items-center justify-around gap-8 *:hover:font-bold *:transition-all'>
-                    <li><Link href={'#'}>Home</Link></li>
-                    <li><Link href={'#'}>Models</Link></li>
-                    <li><Link href={'#'}>About</Link></li>
-                    <li><Link href={'#'}>Contact</Link></li>
-                </ul>
-            </div>
+  return (
+    <header className="border-b border-zinc-200 bg-white">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="group text-sm font-medium tracking-tight text-zinc-900"
+        >
+          <span className="mr-1.5 text-sky-400 transition-colors group-hover:text-sky-500">
+            ●
+          </span>
+          <span className="transition-colors group-hover:text-zinc-700">
+            AI Model Hub
+          </span>
+        </Link>
 
-            <div>
-                <Button>Start Chatting</Button>
-            </div>
-        </div>
-    )
+        {/* Navigation */}
+        <nav className="hidden items-center gap-8 sm:flex">
+          <Link
+            href="/"
+            className="text-sm font-medium text-zinc-500 transition-all duration-200 hover:font-semibold hover:text-zinc-950"
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/models"
+            className="text-sm font-medium text-zinc-500 transition-all duration-200 hover:font-semibold hover:text-zinc-950"
+          >
+            Models
+          </Link>
+
+          <Link
+            href="/about"
+            className="text-sm font-medium text-zinc-500 transition-all duration-200 hover:font-semibold hover:text-zinc-950"
+          >
+            About
+          </Link>
+
+          <Link
+            href="/contact"
+            className="text-sm font-medium text-zinc-500 transition-all duration-200 hover:font-semibold hover:text-zinc-950"
+          >
+            Contact
+          </Link>
+        </nav>
+
+        {/* CTA */}
+        <Link href={'/assistant'}>
+          <Button
+            size="sm"
+            className="h-9 min-w-0 rounded-md bg-sky-500 px-5 text-xs font-medium text-white shadow-none transition-all duration-200 hover:bg-sky-600 hover:shadow-sm"
+          >
+            Start Chatting
+          </Button>
+        </Link>
+      </div>
+    </header>
+  );
 }
