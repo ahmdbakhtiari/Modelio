@@ -26,7 +26,7 @@ export default function AssistanChat() {
     const [showError, setShowError] = useState(false)
     const messagesEndRef = useRef<HTMLDivElement>(null)
 
-    const models = ['Nemotron-3', 'Space-Bunny', 'Ling-3', 'Laguna', 'Dots3', 'Inkling']
+    const models = ['Nemotron-3', 'Space-Bunny', 'Ling-3', 'Dots3', 'Inkling']
 
     // Scroll to bottom whenever messages change
     useEffect(() => {

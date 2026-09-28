@@ -1,3 +1,4 @@
+"use server"
 import { UrlMaker } from "../lib/utils";
 
 
@@ -45,6 +46,7 @@ export const postMessageInChat = async (formData: FormData) => {
 export const postMessageToOpenRouter = async (message: string, modelName: string) => {
   const URL = "https://openrouter.ai/api/v1/chat/completions"
   const api_key = process.env.OPENROUTER_API_KEY
+  console.log('api_key :>> ', api_key);
   let model
   switch (modelName) {
     case 'Nemotron-3':
@@ -55,9 +57,6 @@ export const postMessageToOpenRouter = async (message: string, modelName: string
       break
     case 'Ling-3':
       model = 'inclusionai/ling-3.0-flash-fin:free'
-      break
-    case 'Laguna':
-      model = 'poolside/laguna-s-2.1:free'
       break
     case 'Dots3':
       model = 'dots-studio/dots-3-note-preview:free'
