@@ -5,7 +5,7 @@ import {
   Crosshair,
   Sparkles,
 } from "lucide-react";
-import MainMenu from "../components/MainMenu";
+import MainMenu from "../../components/MainMenu";
 import Link from "next/link";
 
 
